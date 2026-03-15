@@ -19,7 +19,7 @@ The Anycubic Chiron is a large-format 3D printer that benefit significantly from
 The upgrade involves significant rewiring. Below are photos of the Octopus Pro board mounted and wired within the Chiron's base.
 
 ### Board Installation
-![Octopus Pro Mounted](./images/media__1773585503539.jpg)
+![Octopus Pro Mounted](./images/media__1773585775122.jpg)
 *The Octopus Pro board mounted in the original electronics compartment.*
 
 ### Component Wiring
@@ -27,7 +27,8 @@ The upgrade involves significant rewiring. Below are photos of the Octopus Pro b
 *Detail of the motor, heater, and sensor connections.*
 
 ### Cooling System
-![Fan Setup](./images/media__1773585775122.jpg)
+![Fan Setup](./images/media__1773585503539.jpg)
+
 *Custom cooling fan arrangement for the stepper drivers and MCU.*
 
 ## Configuration Features
