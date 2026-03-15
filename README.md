@@ -14,6 +14,27 @@ The Anycubic Chiron is a large-format 3D printer that benefits significantly fro
 - **Stepper Drivers:** TMC2209 (UART mode)
 - **Firmware:** Klipper
 
+## Prerequisites & Bill of Materials
+
+Before starting the upgrade, you must prepare the following components and printed parts.
+
+### Required Printed Parts
+1. **Octopus Board Mounting Plate:** You must print this plate to secure the new motherboard in the Chiron's base.
+   - [Octopus Mounting Plate (Thingiverse)](https://www.thingiverse.com/thing:4922840)
+2. **Upgraded Print Head Carriage:** Required for better cooling and direct wiring.
+   - [Anycubic Chiron Print Head Upgrade (Thingiverse)](https://www.thingiverse.com/thing:3621886)
+
+### Required Hardware & Supplies
+To complete the rewiring and print head upgrade, you will need:
+- **Fans:** 60 mm fans for the print head and electronics cooling.
+- **Wiring:** High-quality wires and long stepper motor extension wires.
+- **Connectors:** JST-XH 2.54mm connector kit for all board connections.
+- **Fasteners:** A comprehensive set of M3/M4/M5 screws, nuts, and washers.
+
+| Stepper Wires | Connector Kit | Screw Kit |
+| :---: | :---: | :---: |
+| ![Stepper Wires](./images/stepper_wires.png) | ![Connector Kit](./images/connector_kit.jpg) | ![Screw Kit](./images/screw_kit.jpg) |
+
 ## Major Modifications & Rewiring
 
 The upgrade involved a complete overhaul of the printer's electrical system to improve reliability and simplify the signal path.
@@ -28,14 +49,25 @@ Unlike the print head, the **bed heating sub-board was retained**. This board ha
 The original setup included a small 24V converter/power supply alongside the main unit. This smaller unit has been **removed**. The printer now runs exclusively off the **massive main power supply**. 
 - **Why?** The Octopus Pro board features robust power management and can handle the logic and motor power distribution directly from the primary 24V source. Removing the redundant converter simplifies the wiring, reduces heat, and eliminates a potential point of failure.
 
-## Recommended Upgrades
+## Hardware Photos
 
-### Print Head Upgrade
-It is highly recommended to upgrade the print head carriage to a more robust design to improve cooling and stability. I am using the following design:
-- [Anycubic Chiron Print Head Upgrade (Thingiverse)](https://www.thingiverse.com/thing:3621886)
+Below are the photos of the final installation.
 
+### Upgraded Print Head
 ![Upgraded Print Head](./images/print_head.jpg)
-*The upgraded print head carriage with improved part cooling.*
+*The upgraded print head carriage with improved part cooling (60mm fans).*
+
+### Board Installation
+![Octopus Pro Mounted](./images/media__1773585775122.jpg)
+*The Octopus Pro board mounted using the custom 3D printed plate.*
+
+### Component Wiring
+![Wiring Detail](./images/media__1773585503577.jpg)
+*Detail of the direct wiring path and JST-XH connector terminations.*
+
+### Cooling System
+![Fan Setup](./images/media__1773585503539.jpg)
+*The custom fan arrangement for keeping the TMC2209 drivers cool.*
 
 ## Printing Recommendations
 
@@ -47,22 +79,6 @@ Due to the massive size and weight of the Chiron's heated bed and carriage, it i
 ## Final XYZ Calibration Print
 ![XYZ Calibration Cube](./images/xyz_cube.jpg)
 *Recent XYZ calibration cube showing excellent layer consistency and dimensional accuracy.*
-
-## Wiring & Installation Photos
-
-Below are the photos of the hardware setup.
-
-### Board Installation
-![Octopus Pro Mounted](./images/media__1773585775122.jpg)
-*The Octopus Pro board mounted in the electronics compartment.*
-
-### Component Wiring
-![Wiring Detail](./images/media__1773585503577.jpg)
-*Detail of the direct wiring path to the various components.*
-
-### Cooling System
-![Fan Setup](./images/media__1773585503539.jpg)
-*The custom fan arrangement for keeping the TMC2209 drivers cool.*
 
 ## Configuration Features
 
