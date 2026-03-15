@@ -28,21 +28,41 @@ Unlike the print head, the **bed heating sub-board was retained**. This board ha
 The original setup included a small 24V converter/power supply alongside the main unit. This smaller unit has been **removed**. The printer now runs exclusively off the **massive main power supply**. 
 - **Why?** The Octopus Pro board features robust power management and can handle the logic and motor power distribution directly from the primary 24V source. Removing the redundant converter simplifies the wiring, reduces heat, and eliminates a potential point of failure.
 
-## Wiring Photos
+## Recommended Upgrades
 
-Below are the photos of the Octopus Pro board installation and the consolidated power setup.
+### Print Head Upgrade
+It is highly recommended to upgrade the print head carriage to a more robust design to improve cooling and stability. I am using the following design:
+- [Anycubic Chiron Print Head Upgrade (Thingiverse)](https://www.thingiverse.com/thing:3621886)
+
+![Upgraded Print Head](./images/print_head.jpg)
+*The upgraded print head carriage with improved part cooling.*
+
+## Printing Recommendations
+
+Due to the massive size and weight of the Chiron's heated bed and carriage, it is essential to print at conservative speeds to prevent layer shifts.
+- **Print Speed:** 50 mm/s
+- **Acceleration:** 100 mm/s²
+- *Note: I may try to increase acceleration gradually in the future, but these settings provide high reliability.*
+
+## Final XYZ Calibration Print
+![XYZ Calibration Cube](./images/xyz_cube.jpg)
+*Recent XYZ calibration cube showing excellent layer consistency and dimensional accuracy.*
+
+## Wiring & Installation Photos
+
+Below are the photos of the hardware setup.
 
 ### Board Installation
-![Octopus Pro Mounted](./images/media__1773585503539.jpg)
-*The Octopus Pro board mounted in the electronics compartment with direct wiring to the print head.*
+![Octopus Pro Mounted](./images/media__1773585775122.jpg)
+*The Octopus Pro board mounted in the electronics compartment.*
 
 ### Component Wiring
 ![Wiring Detail](./images/media__1773585503577.jpg)
-*Detail of the motor and heater connections, showing the direct home-run wiring.*
+*Detail of the direct wiring path to the various components.*
 
-### Cooling and Power
-![Fan Setup](./images/media__1773585775122.jpg)
-*The consolidated cooling arrangement (large fan with custom mounting) and the simplified 24V power entry.*
+### Cooling System
+![Fan Setup](./images/media__1773585503539.jpg)
+*The custom fan arrangement for keeping the TMC2209 drivers cool.*
 
 ## Configuration Features
 
