@@ -87,6 +87,18 @@ Due to the massive size and weight of the Chiron's heated bed and carriage, it i
 - **TMC2209 UART:** Full software control over motor current and microstepping.
 - **Optimized Macros:** Custom G-code macros for pausing, resuming, and cancelling prints.
 
+## AI-Assisted Installation with Antigravity
+
+For an easier installation experience, you can use the **Antigravity AI coding assistant** to help you set up Klipper on your Raspberry Pi and troubleshoot any configuration issues.
+
+To link your Raspberry Pi to Antigravity, follow the instructions here:
+- [Connect Antigravity to Raspberry Pi (Kbase)](https://github.com/michalev86-crypto/Kbase/tree/main/Connect_Antigravity_to_Rpi)
+
+Once connected, you can simply ask Antigravity to:
+- "Install Klipper and OctoPrint/Mainsail on this Pi."
+- "Configure the STM32H723 MCU for my Octopus Pro board."
+- "Verify my `printer.cfg` for any syntax errors."
+
 ## How to Use
 
 1. Flash the Octopus Pro with the generated Klipper firmware (`klipper.bin`).
