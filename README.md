@@ -29,7 +29,8 @@ To complete the rewiring and print head upgrade, you will need:
 - **Fans:** 60 mm fans for the print head and electronics cooling.
 - **Wiring:** High-quality wires and long stepper motor extension wires.
 - **Connectors:** JST-XH 2.54mm connector kit for all board connections.
-- **Fasteners:** A comprehensive set of M3/M4/M5 screws, nuts, and washers.
+- **Fasteners:** A comprehensive set of **M3**, M4, and M5 screws, nuts, and washers.
+  - **Important:** The print head upgrade specifically requires M3 bolts. It is highly advised to purchase a kit with **different sizes** (lengths) to ensure you have the right fit for every component and any future adjustments.
 
 | Stepper Wires | Connector Kit | Screw Kit |
 | :---: | :---: | :---: |
